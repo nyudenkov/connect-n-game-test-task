@@ -105,7 +105,6 @@ class ConnectNGame:
 @click.option("--connect", type=int, default=4, help='Num of connected pieces')
 @click.option("--players-num", type=int, default=2, help='Num of players')
 def main(rows: int, cols: int, connect: int, players_num: int) -> None:
-    print(rows, cols, connect, players_num)
     game = ConnectNGame(rows, cols, connect, players_num)
     game.play()
 
